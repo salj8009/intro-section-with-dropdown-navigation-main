@@ -5,38 +5,71 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
+  <link href="https://fonts.googleapis.com/css2?family=Epilogue:wght@500;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="./style.css">
+  <link rel="stylesheet" href="./tablet.css" media="(min-width: 768px)">
+  <link rel="stylesheet" href="./desktop.css" media="(min-width: 1024px)">
   
   <title>Frontend Mentor | Intro section with dropdown navigation</title>
-
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
 </head>
 <body>
-
-  Features
-  Company
-  Careers
-  About
-
-  Login
-  Register
-
-  Make remote work
-
-  Get your team in sync, no matter your location. Streamline processes, 
-  create team rituals, and watch productivity soar.
-
-  Learn more
-  
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
+  <header>
+    <figure class="img-logo-empresa">
+      <img src="./images/logo.svg" alt="logo-empresa">
+    </figure>  
+    <figure class="img-icon-menu">
+      <img src="./images/icon-menu.svg" alt="icon-menu">      
+    </figure>    
+    <nav class="nav-bar ocultar">
+      <img class="img-close" src="./images/icon-close-menu.svg" alt="close">
+      <ul>
+        <li>
+          Features
+          <img class="arrow-down" src="./images/icon-arrow-down.svg" alt="arrow-down">
+          <ul class="ocultar submenu-one">
+            <li class="sub-one-li"><img src="./images/icon-todo.svg" alt="todo">Todo List</li>
+            <li class="sub-one-li"><img src="./images/icon-calendar.svg" alt="calendar">Calendar</li>
+            <li class="sub-one-li"><img src="./images/icon-reminders.svg" alt="reminders">Remiders</li>
+            <li class="sub-one-li"><img src="./images/icon-planning.svg" alt="planning">Planning</li>
+          </ul>
+        </li>
+        <li>
+          Company
+          <img class="arrow-down-company" src="./images/icon-arrow-down.svg" alt="arrow-down">
+          <ul class="ocultar submenu-two">
+            <li class="sub-two-li">History</li>
+            <li class="sub-two-li">Our Team</li>
+            <li class="sub-two-li">Blog</li>
+          </ul>
+        </li>
+        <li>Careers</li>
+        <li>About</li>
+      </ul>
+      <div class="content-btns">
+        <button class="btn-log-reg">Login</button>
+        <button class="btn-log-reg">Register</button>
+      </div>
+      
+    </nav>
+    
+  </header>
+  <main>
+    <section class="img-background">
+      
+    </section>
+    <section class="content-text">
+      <h1>Make remote work</h1>
+      <p>Get your team in sync, no matter your location. Streamline processes, 
+          create team rituals, and watch productivity soar.</p>
+      <button>Learn more</button>
+      <div class="content-images">
+        <img src="./images/client-databiz.svg" alt="databiz">
+        <img src="./images/client-audiophile.svg" alt="audiophile">
+        <img src="./images/client-meet.svg" alt="meet">
+        <img src="./images/client-maker.svg" alt="maker">
+      </div>  
+    </section>    
+  </main>
   <script src="./index.js"></script>
 </body>
 </html>
